@@ -2,10 +2,10 @@
 
 1. Prerequisites:
 
-* Python 3+ and `pip` installed and available.
-* A reasonably modern Linux as operating system, for example Ubuntu.
-* `sqlite` installed on the system.
-* Ability to create a Python virtual environment.
+    * Python 3+ and `pip` installed and available.
+    * A reasonably modern Linux as operating system, for example Ubuntu.
+    * `sqlite` installed on the system.
+    * Ability to create a Python virtual environment.
 
 2. Install Python packages (ideally in a virtual environment):
 
@@ -20,8 +20,3 @@
 5. Run the development server:
 
     $ ./manage.py runserver
-
-
-
-
-
