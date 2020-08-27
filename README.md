@@ -9,14 +9,14 @@
 
 2. Install Python packages (ideally in a virtual environment):
 
-    $ pip install -r requirements.txt
+    `$ pip install -r requirements.txt`
 
 3. Change into the `test-project` directory.
 
 4. Run the necessary migrations:
 
-    $ ./manage.py migrate
+    `$ ./manage.py migrate`
 
 5. Run the development server:
 
-    $ ./manage.py runserver
+    `$ ./manage.py runserver`
