@@ -5,6 +5,7 @@ from .forms  import TextBlobForm
 from .models import TextBlob
 
 # display the inut form and save the input
+# add count of the text blobs in the database
 def index(req):
     if req.method == "POST":
         form = TextBlobForm(req.POST)
@@ -13,7 +14,10 @@ def index(req):
             return redirect('success')
     else:
         form = TextBlobForm()
-    return render(req, 'index.html', {'form': form})
+        count_blobs =  TextBlob.objects.count()
+    return render(req, 'index.html', {'form': form, 'count_blobs': count_blobs})
 
+# display success and count of text blobs
 def success(req):
-    return render(req, 'success.html')
+    count_blobs =  TextBlob.objects.count()
+    return render(req, 'success.html', {'count_blobs': count_blobs})

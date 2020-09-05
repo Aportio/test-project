@@ -4,6 +4,7 @@
         <form method="post">{% csrf_token %}
             {{ form }}
         </form>
+        <p>So far we have {{ count_blobs }} blobs of text.</p>
     </body>
 </html>
 
