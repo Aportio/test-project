@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from .forms  import TextBlobForm
 from .models import TextBlob
 
+# display the inut form and save the input
 def index(req):
     if req.method == "POST":
         form = TextBlobForm(req.POST)
