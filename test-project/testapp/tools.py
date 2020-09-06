@@ -11,3 +11,9 @@ def splitWords(sentence):
     s = str(sentence).replace('-', ' ') # force to string and convert hyphens to spce to separate words
     s = re.sub(rePunctuation, '', s).strip() # remove all punctuation and strip trailing whitespace
     return re.split(reSplit, s, flags=re.IGNORECASE)
+
+
+# test whether the words in the input sentence are too similar to the sentences in the list
+def isSimilar(sentence, list=[]):
+    isSimilar = True
+    return isSimilar
