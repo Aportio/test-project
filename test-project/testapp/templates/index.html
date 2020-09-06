@@ -4,6 +4,7 @@
         <form method="post">{% csrf_token %}
             {{ form }}
         </form>
+        {% for error in form.non_field_errors %}<p>{{error}}</p>{% endfor %}
         <p>So far we have {{ count_blobs }} blobs of text.</p>
     </body>
 </html>
